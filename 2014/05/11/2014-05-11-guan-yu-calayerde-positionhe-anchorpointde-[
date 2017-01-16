@@ -94,7 +94,7 @@
 关于CALayer在Core Animation中最基本也是最重要的内容就是CALayer，每个UIView都有一个CALayer对象。CALayer">
 <meta property="og:image" content="www.hongbin.me/images/2014-05-10-anchor/layer_coords_anchorpoint_position_2x.png">
 <meta property="og:image" content="www.hongbin.me/images/2014-05-10-anchor/anchorpoint2.jpg">
-<meta property="og:updated_time" content="2014-05-11T04:49:36.000Z">
+<meta property="og:updated_time" content="2017-01-16T07:26:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于CALayer的position和anchorPoint的一点理解">
 <meta name="twitter:description" content="闲言翻看记录，发现自从3月底搭建完这个blog写了第一篇文章后，就再也没有写过任何东西了，只能在心底强烈的鄙视自己一番。鉴于最近在新项目中学到不少东西，同时，发现很多东西没有掌握，所以计划在接下来的一段时间内，好好学习，偶尔记录，希望能多写点东西。
@@ -193,7 +193,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -203,7 +203,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -283,7 +283,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-05-11T12:13:48+08:00">
                 2014-05-11
@@ -323,6 +323,7 @@
       
         <h2 id="闲言"><a href="#闲言" class="headerlink" title="闲言"></a>闲言</h2><p>翻看记录，发现自从3月底搭建完这个blog写了第一篇文章后，就再也没有写过任何东西了，只能在心底强烈的鄙视自己一番。鉴于最近在新项目中学到不少东西，同时，发现很多东西没有掌握，所以计划在接下来的一段时间内，好好学习，偶尔记录，希望能多写点东西。</p>
 <h2 id="关于CALayer"><a href="#关于CALayer" class="headerlink" title="关于CALayer"></a>关于CALayer</h2><p>在Core Animation中最基本也是最重要的内容就是CALayer，每个UIView都有一个CALayer对象。CALayer在很多方面与UIView非常相似。它拥有位置、大小、变形和内容。但是CALayer并不是用来替代UIView对象的，相反，它是和UIView一起协作的。UIView是一个很重量级的对象，它管理绘制与事件处理（尤其是触摸事件），CALayer则完全关乎绘制，UIView依靠CALayer来管理绘制，通过这样的分工两者就能协作的更好。</p>
+<a id="more"></a>
 <h2 id="CALayer的几何属性"><a href="#CALayer的几何属性" class="headerlink" title="CALayer的几何属性"></a>CALayer的几何属性</h2><p>就像前面说的，CALayer拥有自己的位置（position）、大小(bounds,frame)、变形(transform)和内容(content)，同时，它还拥有一个UIView所没有的属性anchorPoint。其中position、bounds、frame是基于点坐标系的（point-based coordinate systems），而anchorPoint是基于单元坐标系的（unit coordinate systems），即X坐标和Y坐标的取值在0-1之间。bounds和frame的意思比较好理解，farme为CALayer在其父层（superLayer）上的位置和大小，而bounds则是可以简单理解为CALayer的大小，其X坐标和Y坐标为0。剩下的position和anchorPoint则是最容易让人困惑的。</p>
 <h2 id="position"><a href="#position" class="headerlink" title="position"></a>position</h2><p>在CALayer.h文件中我们可以看到:</p>
 <pre><code>/* The position in the superlayer that the anchor point of the layer&apos;s
@@ -345,24 +346,13 @@
 <p>图2</p>
 <p>在图1中，我们可以看到，position的值是anchorPoint点在superLayer中的坐标位置。所以position点是相对于superLayer的，而anchorPoint点是相对于CALayer本身的。两者是相对不同的坐标空间的一个重合点。</p>
 <p>在图2中，我们可以看到，anchorPoint的作用，其实是在CALayer做动画时的一个锚点，所有的变化是以anchorPoint为锚点进行的，相同的动画，不同的锚点，效果是全然不同的。具体的描述可以看<a href="http://wonderffee.github.io/blog/2013/10/13/understand-anchorpoint-and-position/" target="_blank" rel="external">彻底理解position与anchorPoint</a>这篇博文。</p>
-<h2 id="anchorPoint、position和frame之间的关系"><a href="#anchorPoint、position和frame之间的关系" class="headerlink" title="anchorPoint、position和frame之间的关系"></a>anchorPoint、position和frame之间的关系</h2><p>在官方的<a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html" target="_blank" rel="external">Core Animation文档中</a>有这样的一句话：<br>&gt;<br> The bounds defines the coordinate system of the layer itself and encompasses the layer’s size on the screen. The position property defines the location of the layer relative to its parent’s coordinate system. Although layers have a frame property, that property is actually derived from the values in the bounds and position properties and is used less frequently.</p>
-<p>也就是说CALayer的frame是由CALayer的bounds属性和position属性确定的，bounds决定大小，position决定位置</p>
-<pre><code>frame.origin.x = position.x - anchorPoint.x * bounds.size.width;
-frame.origin.y = position.y - anchorPoint.y * bounds.size.height;
-frame.size.width  = bounds.size.width;
-frame.size.height = bounds.size.height;
-</code></pre><p>为此我写了一段测试代码</p>
-<pre><code>CALayer *testLayer = [[CALayer alloc] init];
-testLayer.frame = (CGRect){
-    .origin.x = 10,
-    .origin.y = 10,
-    .size.width =  100,
-    .size.height = 100
-};
-testLayer.backgroundColor = [UIColor redColor].CGColor;
-[self.view.layer addSublayer:testLayer];
-
-NSLog(@&quot;testLayer frame = %@&quot;,NSStringFromCGRect(testLayer.frame));
+<h2 id="anchorPoint、position和frame之间的关系"><a href="#anchorPoint、position和frame之间的关系" class="headerlink" title="anchorPoint、position和frame之间的关系"></a>anchorPoint、position和frame之间的关系</h2><p>在官方的<a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html" target="_blank" rel="external">Core Animation文档中</a>有这样的一句话：<br>&gt;</p>
+<blockquote>
+<p>The bounds defines the coordinate system of the layer itself and encompasses the layer’s size on the screen. The position property defines the location of the layer relative to its parent’s coordinate system. Although layers have a frame property, that property is actually derived from the values in the bounds and position properties and is used less frequently.</p>
+</blockquote>
+<p>也就是说CALayer的frame是由CALayer的bounds属性和position属性确定的，bounds决定大小，position决定位置<br>​<br>     frame.origin.x = position.x - anchorPoint.x <em> bounds.size.width;<br>     frame.origin.y = position.y - anchorPoint.y </em> bounds.size.height;<br>     frame.size.width  = bounds.size.width;<br>     frame.size.height = bounds.size.height;</p>
+<p>为此我写了一段测试代码<br>​<br>    CALayer *testLayer = [[CALayer alloc] init];<br>    testLayer.frame = (CGRect){<br>        .origin.x = 10,<br>        .origin.y = 10,<br>        .size.width =  100,<br>        .size.height = 100<br>    };<br>    testLayer.backgroundColor = [UIColor redColor].CGColor;<br>    [self.view.layer addSublayer:testLayer];</p>
+<pre><code>NSLog(@&quot;testLayer frame = %@&quot;,NSStringFromCGRect(testLayer.frame));
 NSLog(@&quot;testLayer bounds = %@&quot;,NSStringFromCGRect(testLayer.bounds));
 NSLog(@&quot;testLayer position = %@&quot;,NSStringFromCGPoint(testLayer.position));
 NSLog(@&quot;testLayer anchorPoint = %@&quot;,NSStringFromCGPoint(testLayer.anchorPoint));
@@ -404,8 +394,9 @@ testLayer position = (20, 20)
 testLayer anchorPoint = (0.40000001, 0.40000001)
 </code></pre><p>从中我们可以验证我们之前的公式是正确的，即frame的origin是由position和anchorPoints共同决定的，而frame的size则是由bounds决定的。</p>
 <p>另外一个问题就是，单方面修改layer的position位置或者是anchorPoint，其两者互不影响，受影响的只会是frame.origin，也就是layer坐标原点相对superLayer会有所改变。</p>
-<p>最后，在<a href="http://wonderffee.github.io/blog/2013/10/13/understand-anchorpoint-and-position/" target="_blank" rel="external">彻底理解position与anchorPoint</a>这篇博文的有说到一点，<br>&gt;<br>Apple doc中还有一句描述是这样的：</p>
+<p>最后，在<a href="http://wonderffee.github.io/blog/2013/10/13/understand-anchorpoint-and-position/" target="_blank" rel="external">彻底理解position与anchorPoint</a>这篇博文的有说到一点，<br>&gt;</p>
 <blockquote>
+<p>Apple doc中还有一句描述是这样的：</p>
 <blockquote>
 <p>When you specify the frame of a layer, position is set relative to the anchor point. When you specify the position of the layer, bounds is set relative to the anchor point.</p>
 </blockquote>
@@ -508,10 +499,10 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -530,7 +521,7 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">14</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -539,7 +530,7 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
@@ -548,7 +539,7 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               </a>
             </div>
           
@@ -558,6 +549,44 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hongbin89" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chenhongblog/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/robert_chb/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/hongbin89" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
           
         </div>
 
@@ -612,7 +641,7 @@ testLayer anchorPoint = (0.40000001, 0.40000001)
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

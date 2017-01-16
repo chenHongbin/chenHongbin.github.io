@@ -96,7 +96,7 @@
 希望2015年自己能够坚持把这个”Harold Weekly”写下去。
 结果三周后就没在坚持了！其实，上周日在骑车的过程中已经在心里打好了腹稿，结果回到宿舍洗个澡后懒人癌发作倒头就睡，然后就没有然后了！
 在准备写这篇文章的时候，无意间发现去年的今天（2014年3月22日）我写了这个博客的第一篇文章–“你好！我的第一篇博客">
-<meta property="og:updated_time" content="2015-03-22T17:42:26.000Z">
+<meta property="og:updated_time" content="2017-01-16T07:25:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我读了什么？No.4 (2015-03-22)">
 <meta name="twitter:description" content="闲言说来惭愧，距离上一次写“我读了什么”已经过了2个月！在第一期中告诉自己说
@@ -196,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -206,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -286,7 +286,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-03-22T20:59:13+08:00">
                 2015-03-22
@@ -307,7 +307,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">in</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -350,30 +350,16 @@
 <pre><code>希望2015年自己能够坚持把这个”Harold Weekly”写下去。
 </code></pre><p>结果三周后就没在坚持了！其实，上周日在骑车的过程中已经在心里打好了腹稿，结果回到宿舍洗个澡后懒人癌发作倒头就睡，然后就没有然后了！</p>
 <p>在准备写这篇文章的时候，无意间发现去年的今天（2014年3月22日）我写了这个博客的第一篇文章–<a href="http://chenhongbin.github.io/blog/2014/03/22/ni-hao-%21wo-de-di-%5B%3F%5D-pian-bo-ke/" target="_blank" rel="external">“你好！我的第一篇博客”</a>。这一年自己共写了11篇文章（有两篇在简书上，还没搬到这里），4篇技术文章，2篇年度总结文章，3篇“我读了什么”，1篇开博客文章以及1篇关于自己听的播客。这其中最大收获是：写博客是一种非常棒的思考、总结方式，无论是对于技术的思考，还是对于工作生活的反思，同时也是一个分享好东西的绝妙方式，微博、朋友圈真的很难说清楚很多东西，当然这可能是我自己在表达上的不足。有收获，必然就有遗憾，最大的遗憾是：没有好好的坚持写博客，总是断断续续。所以，希望在接下来的一年里，能够坚持写博客，坚持分享好的东西。</p>
+<a id="more"></a>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="内容消费与内容生产"><a href="#内容消费与内容生产" class="headerlink" title="内容消费与内容生产"></a>内容消费与内容生产</h2><p>最近两件事情让我对于内容的消费和生产有了一些体会：</p>
 <p>1.我在简书上发表了一篇<a href="http://www.jianshu.com/p/69449e6bdc14" target="_blank" rel="external">《关于App的一些迷思以及一些动画效果开源库的推荐》</a>，在三天内得到了120多个赞，近2000次阅读，然后被推荐到简书的首页。</p>
 <p>2.在微博上发了一条<a href="http://weibo.com/1764177832/C8wGyudOZ?type=comment#_rnd1427034423106" target="_blank" rel="external">Auto Layout的一个调试技巧的微博</a>，结果一个晚上后得到了85次转发，15个评论，粉丝数增加了40个，这是我玩微博这么多年来发的最成功的一条微博了！</p>
 <p>我不敢说自己写的文章或者微博的质量有多高，但是可以肯定的是这些是我用心去生产的内容，那篇文章我花了一个晚上——近4个小时的时间，从自己平常收集的项目中找出这些优秀的项目，进行分类整理，下载每一个项目的动态效果图等等，而这份用心也得到了大家的认可。由此让我想到，在我们的生活中充满着各种各样的资讯与内容，微信公众号、朋友圈、微博以及各种新闻客户端等等，但是很多时候，我们还是找不到自己喜欢的、有深度的、有价值的内容，很多时候花了大量的时间阅读了大量的信息，却还是感觉空荡荡的。同时，很多文章、内容都是属于典型的标题党，将标题写得十分的抢眼，结果你点进去阅读时，发现要不是文章写的极度的肤浅、没有任何深度和价值可言，就是充斥各种同类抄袭、“借鉴”的文章，很多时候连最基本的可信度都没有！而这东西耗费了用户大量的时间，也使得他们找到有价值的内容要付出更多的精力与成本。</p>
 <p>我们知道用户对于优质内容的消费需求远远没有被满足，也永远不会满足！所以，对于内容提供方生产内容的唯一有效法则就是“用心”！而不是为了快、为了热点、为了迎合大众，甚至是为了点击数、阅读量，而放弃“用心”。在此给大家推荐播客《流行通信》<a href="https://ipn.li/popdispatch/16/" target="_blank" rel="external">《乌云装扮者：「我都快怀孕了我觉得。」》</a>这期节目，节目中微信号“乌云装扮者”背后的神秘人物表达了他对于当前内容消费和内容生产的看法，个人觉得是我挺多的《流行通信》里最值得听的一期！同时，在播客《比特新声》最新的一期<a href="http://www.bitvoice.xyz/episode/34-27-70-" target="_blank" rel="external">海龙的 27 岁生日的第 70 期</a>的结尾，主持人<a href="http://weibo.com/leeyoung7" target="_blank" rel="external">@人字拖2号</a>谈到他在录制后期在写本期要点时，会再次将所提及的内容、链接放到Google里去重新检索一边，看看是否有更全面的、更好的介绍和说明，这么用心在做的节目！你说质量怎么可能不好呢？怎么可能不受用户的喜爱呢？</p>
-<h2 id="《噪音太多》"><a href="#《噪音太多》" class="headerlink" title="《噪音太多》"></a>《噪音太多》</h2><p><a href="http://www.amazon.cn/噪音太多-梁文道/dp/B00264FPSA/ref=tmm_pap_title_0?ie=UTF8&amp;qid=1427043819&amp;sr=8-1" target="_blank" rel="external">《噪音太多》</a>是最近读的梁文道的关于音乐、电影的感想札记书。里面的很多观点刷新了我对于声音、音乐和电影的认识。同时，也获得了几张不错的专辑，以及再次感觉到自己的无知与愚昧。</p>
-<pre><code>看电影于我就和听音乐一样，是少年时代追求自由的手段。拒斥庸俗，一开始或许还是为了在同学之间树   
-起不凡的自我感觉，但它其实更是为了逃离庸俗的宰制，离开“成人社会”的无聊和谎言，离开森严的学校  
-体制，离开社会和国家对你的期盼跟定位。
-</code></pre><p>一直觉得自己对于音乐，对于电影的接触太晚，尤其对于它们的认识太过于肤浅，所以今年给自己定了个目标：一周看一部电影，听那些著名的专辑，了解那些历史上伟大的乐队，比如披头士。</p>
-<p>关于蓝调：</p>
-<pre><code>几乎所有蓝调史都会告诉你，无论是南北战争前的美国黑奴还是战后的佃农，都会在工作的时候唱歌。他 
-们唱歌，所以劳苦可以稍稍轻松一点。那些歌有整齐的节拍，可以用来跳舞，而且是大伙儿一起跳，就像
-他们的祖先曾经在野地上围着火踏步旋转一样。只是在地里干活儿的时候，他们以劳动代替舞蹈。这就是
-典型的工作歌，以旋律和节奏协调工人们的一举手一投足，唱到“哼”的时候齐齐举起锄头，唱到“嘿”的时
-候一起奋力锄地。蓝调的直接源头不是这种棉花田里的工作歌，而是“筑堤呐喊”。从工作歌到筑堤呐喊，
-不只是一种曲式的变化，而且还是整个社会背景的变化。在黑奴解放运动之前，工人们做牛做马；解放运
-动之后，他们依然做牛做马。但有一个重要的分别，那就是在过去，他们的身体和人格属于地主，幸运一
-点的当佃农的，也有自己归属的农场和土地。这当然是压迫，但在压迫之中工人都有集体的认同，有集体
-的身份。但当他们被解放出来成了自由劳工之后，却成了什么都不拥有，什么也不属于的散件工，有点类
-似今天在城里头车站旁一排排蹲在地上的民工，等着雇主挑选干那有一天没一天的体力活。换句话说，他
-们彻底成了市场上的商品，待价而沽。在美国南方密西西比三角洲地带，他们等到的，往往就是筑堤的工
-作。
-</code></pre><p>之前对于蓝调没有任何的认知，但是看完这段描述后，瞬间对它特别的兴趣，当然，还有民歌：</p>
+<h2 id="《噪音太多》"><a href="#《噪音太多》" class="headerlink" title="《噪音太多》"></a>《噪音太多》</h2><p><a href="http://www.amazon.cn/噪音太多-梁文道/dp/B00264FPSA/ref=tmm_pap_title_0?ie=UTF8&amp;qid=1427043819&amp;sr=8-1" target="_blank" rel="external">《噪音太多》</a>是最近读的梁文道的关于音乐、电影的感想札记书。里面的很多观点刷新了我对于声音、音乐和电影的认识。同时，也获得了几张不错的专辑，以及再次感觉到自己的无知与愚昧。<br>​<br>    看电影于我就和听音乐一样，是少年时代追求自由的手段。拒斥庸俗，一开始或许还是为了在同学之间树<br>    起不凡的自我感觉，但它其实更是为了逃离庸俗的宰制，离开“成人社会”的无聊和谎言，离开森严的学校<br>    体制，离开社会和国家对你的期盼跟定位。</p>
+<p>一直觉得自己对于音乐，对于电影的接触太晚，尤其对于它们的认识太过于肤浅，所以今年给自己定了个目标：一周看一部电影，听那些著名的专辑，了解那些历史上伟大的乐队，比如披头士。</p>
+<p>关于蓝调：<br>​<br>    几乎所有蓝调史都会告诉你，无论是南北战争前的美国黑奴还是战后的佃农，都会在工作的时候唱歌。他<br>    们唱歌，所以劳苦可以稍稍轻松一点。那些歌有整齐的节拍，可以用来跳舞，而且是大伙儿一起跳，就像<br>    他们的祖先曾经在野地上围着火踏步旋转一样。只是在地里干活儿的时候，他们以劳动代替舞蹈。这就是<br>    典型的工作歌，以旋律和节奏协调工人们的一举手一投足，唱到“哼”的时候齐齐举起锄头，唱到“嘿”的时<br>    候一起奋力锄地。蓝调的直接源头不是这种棉花田里的工作歌，而是“筑堤呐喊”。从工作歌到筑堤呐喊，<br>    不只是一种曲式的变化，而且还是整个社会背景的变化。在黑奴解放运动之前，工人们做牛做马；解放运<br>    动之后，他们依然做牛做马。但有一个重要的分别，那就是在过去，他们的身体和人格属于地主，幸运一<br>    点的当佃农的，也有自己归属的农场和土地。这当然是压迫，但在压迫之中工人都有集体的认同，有集体<br>    的身份。但当他们被解放出来成了自由劳工之后，却成了什么都不拥有，什么也不属于的散件工，有点类<br>    似今天在城里头车站旁一排排蹲在地上的民工，等着雇主挑选干那有一天没一天的体力活。换句话说，他<br>    们彻底成了市场上的商品，待价而沽。在美国南方密西西比三角洲地带，他们等到的，往往就是筑堤的工<br>    作。</p>
+<p>之前对于蓝调没有任何的认知，但是看完这段描述后，瞬间对它特别的兴趣，当然，还有民歌：</p>
 <pre><code>民歌，无论它的来源是非裔美洲人的灵歌，还是白人移民带来的怀乡之曲，本来都是社会最底层人民从喉
 咙底嘶吼出来的声音，谈他们过劳的工作，述说他们卑微的愿望。所以不是西格使得民歌变了调，而是我
 们这些现代听众把他们单纯化成“好歌靓声再重聚”！
@@ -584,10 +570,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -606,7 +592,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">14</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -615,7 +601,7 @@
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">categories</span>
+                <span class="site-state-item-name">Kategorien</span>
               
             </div>
           
@@ -624,7 +610,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               </a>
             </div>
           
@@ -634,6 +620,44 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hongbin89" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chenhongblog/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.instagram.com/robert_chb/" target="_blank" title="Instagram">
+                  
+                    <i class="fa fa-fw fa-instagram"></i>
+                  
+                  Instagram
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/hongbin89" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
           
         </div>
 
@@ -688,7 +712,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
