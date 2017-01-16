@@ -88,18 +88,18 @@
 关于CALayer在Core Animation中最基本也是最重要的内容就是CALayer，每个UIView都有一个CALayer对象。CALayer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于CALayer的position和anchorPoint的一点理解">
-<meta property="og:url" content="http://hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-[">
+<meta property="og:url" content="www.hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-[">
 <meta property="og:site_name" content="陈宏彬的博客">
 <meta property="og:description" content="闲言翻看记录，发现自从3月底搭建完这个blog写了第一篇文章后，就再也没有写过任何东西了，只能在心底强烈的鄙视自己一番。鉴于最近在新项目中学到不少东西，同时，发现很多东西没有掌握，所以计划在接下来的一段时间内，好好学习，偶尔记录，希望能多写点东西。
 关于CALayer在Core Animation中最基本也是最重要的内容就是CALayer，每个UIView都有一个CALayer对象。CALayer">
-<meta property="og:image" content="http://hongbin.me/images/2014-05-10-anchor/layer_coords_anchorpoint_position_2x.png">
-<meta property="og:image" content="http://hongbin.me/images/2014-05-10-anchor/anchorpoint2.jpg">
+<meta property="og:image" content="www.hongbin.me/images/2014-05-10-anchor/layer_coords_anchorpoint_position_2x.png">
+<meta property="og:image" content="www.hongbin.me/images/2014-05-10-anchor/anchorpoint2.jpg">
 <meta property="og:updated_time" content="2014-05-11T04:49:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于CALayer的position和anchorPoint的一点理解">
 <meta name="twitter:description" content="闲言翻看记录，发现自从3月底搭建完这个blog写了第一篇文章后，就再也没有写过任何东西了，只能在心底强烈的鄙视自己一番。鉴于最近在新项目中学到不少东西，同时，发现很多东西没有掌握，所以计划在接下来的一段时间内，好好学习，偶尔记录，希望能多写点东西。
 关于CALayer在Core Animation中最基本也是最重要的内容就是CALayer，每个UIView都有一个CALayer对象。CALayer">
-<meta name="twitter:image" content="http://hongbin.me/images/2014-05-10-anchor/layer_coords_anchorpoint_position_2x.png">
+<meta name="twitter:image" content="www.hongbin.me/images/2014-05-10-anchor/layer_coords_anchorpoint_position_2x.png">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-["/>
+  <link rel="canonical" href="www.hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-["/>
 
 
 
@@ -246,7 +246,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-[?]-dian-li-jie/">
+  <link itemprop="mainEntityOfPage" href="www.hongbin.me/2014/05/11/2014-05-11-guan-yu-calayerde-positionhe-anchorpointde-[?]-dian-li-jie/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="陈宏彬">
